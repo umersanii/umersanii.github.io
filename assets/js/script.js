@@ -32,7 +32,16 @@ const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
+// download button and counter
+const downloadBtn = document.getElementById("downloadBtn");
+const downloadCounter = document.getElementById("downloadCounter");
+let downloadCount = 0;
 
+// Function to handle download button click
+function handleDownloadButtonClick() {
+  downloadCount++;
+  downloadCounter.textContent = `${downloadCount} download${downloadCount !== 1 ? "s" : ""}`;
+}
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
 
