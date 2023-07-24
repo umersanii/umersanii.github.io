@@ -16,51 +16,6 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-// download button and counter
-const downloadBtn = document.getElementById("downloadBtn");
-const downloadCounter = document.getElementById("downloadCounter");
-let downloadCount = 0;
-
-// Function to handle download button click
-function handleDownloadButtonClick() {
-  downloadCount++;
-  downloadCounter.textContent = `${downloadCount} download${downloadCount !== 1 ? "s" : ""}`;
-}
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -166,3 +121,62 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Function to open the modal
+function openModal() {
+  const modal = document.getElementById("myModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalBtn = document.getElementById("myBtn");
+
+  // Get the image URL from the data attribute of the button
+  const imageUrl = modalBtn.dataset.imageUrl;
+
+  // Set the image source in the modal
+  if (modalImage) {
+    modalImage.src = imageUrl;
+  }
+
+  if (modal) {
+    modal.style.display = "block";
+  }
+}
+
+// Function to close the modal
+function closeModal() {
+  const modal = document.getElementById("myModal");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Attach event listener to open modal button
+const openModalBtn = document.getElementById("myBtn");
+if (openModalBtn) {
+  openModalBtn.addEventListener("click", openModal);
+}
+
+// Attach event listener to close modal button
+const closeModalBtn = document.getElementById("closeModalBtn");
+if (closeModalBtn) {
+  closeModalBtn.addEventListener("click", closeModal);
+}
+
+const downloadBtn = document.getElementById('downloadBtn');
+
+downloadBtn.addEventListener('click', function() {
+  const fileUrl = 'https://github.com/umersanii/YT-Downloader/releases/download/Pre-Release/YT.Downloader.Setup.exe'; // Replace this with the actual URL of your hosted file
+
+  // Create a link element
+  const link = document.createElement('a');
+  link.href = fileUrl;
+
+  // Set the download attribute to force download behavior
+  link.setAttribute('download', 'YT.Downloader.Setup.exe'); // Replace 'software.zip' with the desired file name
+
+  // Append the link to the document and trigger the click event
+  document.body.appendChild(link);
+  link.click();
+
+  // Clean up: Remove the link from the document
+  document.body.removeChild(link);
+});

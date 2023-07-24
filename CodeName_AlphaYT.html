@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/pfp.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sani">Umer Sani</h1>
+
+          <p class="title">Learning Beginner Coder</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-sharp"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:iamumersani@gmail.com" class="contact-link">iamumersani@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+
+              <p class="contact-link">godblessusani</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/umersanii" class="contact-link">umersanii</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-steam"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">If you are looking to catch me in game 😉</p>
+
+              <a href="https://steamcommunity.com/profiles/76561198965901738/" class="contact-link">godblessusani</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+  
+        <nav class="navbar">
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link onclick="history.back()">Back</button>
+            </li>
+  
+          </ul>
+  
+        </nav>
+  
+        <article class="about active" data-page="about">
+  
+          <header>
+            <h2 class="h2 article-title">YT Downloader</h2>
+          </header>
+  
+          <section class="about-text">
+            <p><b>UI Showcase:</b>
+
+  
+            <p> </p>
+  
+            <p><b>About:</b></p>
+            <p>
+              A Python based UI Application capable to download any Youtube Video in Best Available Audio and Vido format. <br><br>
+
+              The Application includes 3 buttons. One being the button to change the download destination. Second being the button 
+              to open log file and the last being the option to view the Read me file.<br><br>
+
+              When the URL is put in the URL entry box, the program checks it for being valid and then tells the user if it is valid or not. If it is valid
+              it further proceeds to asking user about the format they want to download it. It would either be a <mark class="cyan"> MP4 or MP3/WEBM </mark>. Afterwards it keeps track of the download
+              process and tells the user of it.
+              <br><br>
+              The Plus Point of using YT Downloader is that it is also capable of downloading your <mark class="cyan" >playlists </mark>with ease, given they are public
+            </p>
+            <p> <b>Installing the Software:</b></p>
+            <p>1. Run the Setup Wizard <br>2. Choose the Installing Directory <br>3. Install 😊</b></p>
+<button id="downloadBtn">Download Software</button>
+           
+    
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

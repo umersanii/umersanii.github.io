@@ -350,8 +350,14 @@
               <figure class="modal-avatar-box">
                 <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
+              <div class="github-icon">
+                <a href="https://example.com/your-link" alt="View on Github" target="_blank"> <!-- Replace "https://example.com/your-link" with your desired URL -->
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                
+              </div>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+
             </div>
 
             <div class="modal-content">
@@ -372,14 +378,14 @@
                     <!-- Download button with click counter -->
           <div class="download-btn-container">
             <button class="download-btn" id="downloadBtn">Download</button>
-            <span class="download-counter" id="downloadCounter">0 downloads</span>
+            
           </div>
+          
 
           <!-- Link to GitHub page -->
-          <div class="github-link">
-            <a href="https://github.com/your_username/your_repository" target="_blank">View on GitHub</a>
-          </div>
-            </div>
+
+          
+           
 
           </section>
 
@@ -390,51 +396,6 @@
           - clients
         -->
 
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -585,7 +546,7 @@
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
-
+        <p style="color:#FFFFFF">Click on 'All' button to make sure all project elements are loaded.<br /><br /></p>
         <section class="projects">
 
           <ul class="filter-list">
@@ -602,9 +563,6 @@
               <button data-filter-btn>Applications</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
 
           </ul>
 
@@ -645,7 +603,7 @@
 
 
             <li class="project-item  active" data-filter-item data-category="artworks">
-              <a href="#">
+              <a href="./CodeName_Betahtml.html"> 
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -663,7 +621,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a href="./CodeName_AlphaYT.html">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -680,10 +638,51 @@
               </a>
             </li>
 
-
+              
+    
+            
 
         </section>
 
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
       </article>
 
 
