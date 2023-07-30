@@ -880,8 +880,17 @@ font-size: 12px;
 }
 
 .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
+.invitel
+{
+  
+  text-align: center;
+  color: var(--light-gray-70);
+  font-size: 18px;
+}
+.invitel :hover{
+  color: var(--orange-yellow-crayola);
+  font-size: 13px;
+}
 /**
  * skills 
  */
