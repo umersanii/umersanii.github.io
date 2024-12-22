@@ -488,8 +488,15 @@ main {
   font-size: 18px;
 }
 
+.customc{
+  color: var(--light-gray-70);
+  font-size: 14px;
+}
 
-.social-item .social-link:hover { color: var(--orange-yellow-crayola); }
+.social-item  .social-link:hover { color: var(--orange-yellow-crayola); }
+
+.customc:hover { color: var(--orange-yellow-crayola); }
+
 
 .gh{
   align-items: left;
