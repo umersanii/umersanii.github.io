@@ -69,6 +69,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --code: hsl(125, 37%, 60%);
 
   /**
    * typography
@@ -159,7 +160,7 @@ body { background: var(--smoky-black); }
 .headings
 {
   font-weight: bold;
-  font-size: large;
+  font-size: 25px;
   color: hsl(184, 100%, 49%);
 }
 
@@ -171,7 +172,10 @@ body { background: var(--smoky-black); }
 }
 
 
-
+code
+{
+  color: var(--code);
+}
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -1877,7 +1881,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .cyan
 {
-  color: var(--cyan-dark);
+  color: var(--light-gray);
   background: none;
   font-weight: bold;
   

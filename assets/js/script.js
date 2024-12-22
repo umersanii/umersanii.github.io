@@ -1,5 +1,6 @@
 'use strict';
 
+console.log("Script loaded successfully!");
 
 
 // element toggle function
@@ -11,8 +12,8 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+// // sidebar toggle functionality for mobile
+// sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
 
@@ -25,7 +26,7 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+// select.addEventListener("click", function () { elementToggleFunc(this); });
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -163,20 +164,49 @@ if (closeModalBtn) {
 
 const downloadBtn = document.getElementById('downloadBtn');
 
-downloadBtn.addEventListener('click', function() {
-  const fileUrl = 'https://github.com/umersanii/YT-Downloader/releases/download/Pre-Release/YT.Downloader.Setup.exe'; // Replace this with the actual URL of your hosted file
+  // downloadBtn.addEventListener('click', function() {
+  //   const fileUrl = 'https://github.com/umersanii/YT-Downloader/releases/download/Pre-Release/YT.Downloader.Setup.exe'; // Replace this with the actual URL of your hosted file
 
-  // Create a link element
-  const link = document.createElement('a');
-  link.href = fileUrl;
+  //   // Create a link element
+  //   const link = document.createElement('a');
+  //   link.href = fileUrl;
 
-  // Set the download attribute to force download behavior
-  link.setAttribute('download', 'YT.Downloader.Setup.exe'); // Replace 'software.zip' with the desired file name
+  //   // Set the download attribute to force download behavior
+  //   link.setAttribute('download', 'YT.Downloader.Setup.exe'); // Replace 'software.zip' with the desired file name
 
-  // Append the link to the document and trigger the click event
-  document.body.appendChild(link);
-  link.click();
+  //   // Append the link to the document and trigger the click event
+  //   document.body.appendChild(link);
+  //   link.click();
 
-  // Clean up: Remove the link from the document
-  document.body.removeChild(link);
+  //   // Clean up: Remove the link from the document
+  //   document.body.removeChild(link);
+  // });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebarPlaceholder = document.getElementById("sidebar-placeholder");
+
+  if (!sidebarPlaceholder) {
+    console.error("Sidebar placeholder not found!");
+    return;
+  }
+
+  fetch("../pages/sidebar.html") // Adjust this path as needed
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch sidebar. HTTP Status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(data => {
+      sidebarPlaceholder.innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Error loading sidebar:", error);
+      sidebarPlaceholder.innerHTML = `
+        <div class="error-message">
+          <p>Sidebar failed to load. Please try again later.</p>
+        </div>
+      `;
+    });
 });
