@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umer Sani - Youtube Downloader</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/bats.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/pfp.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sani">Umer Sani</h1>
+
+          <p class="title">Learning Beginner Coder</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-sharp"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:iamumersani@gmail.com" class="contact-link">iamumersani@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+
+              <p class="contact-link">godblessusani</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/umersanii" class="contact-link">umersanii</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-steam"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">If you are looking to catch me in game 😉</p>
+
+              <a href="https://steamcommunity.com/profiles/76561198965901738/" class="contact-link">godblessusani</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/umer-sani-656372221/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link onclick="history.back()">
+              <ion-icon name="arrow-back" size="large"></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <p class="customhead">Wall-E</p>
+        </header>
+
+        <li class="social-item">
+          <a href="https://github.com/umersanii/Wall-E" target="_blank" class="social-link">
+            <p class="social-link1">View On Github (v.1+)</p>
+          </a>
+        </li>
+
+        <section class="about-text">
+          <mark class="cyan">Wall-E</mark> is a Python-based tool that solves a <b>constraint satisfaction problem (CSP)</b> for optimizing the painting of walls in a 3D environment. It assigns colors to walls based on user-defined constraints like paint availability, adjacency rules, and time limits, while visualizing the walls and robot traversal in 3D.
+
+          <p class="headings"><b>Features:</b></p>
+          <ul class="my-list">
+            <li><mark class="cyan">Constraint-Based Painting Optimization:</mark> Assigns colors to walls while adhering to adjacency rules and paint availability. Computes the shortest traversal path using A* pathfinding and minimizes painting and travel time.</li>
+            <li><mark class="cyan">3D Visualization:</mark> Renders walls with their assigned colors and plots the robot’s traversal path.</li>
+            <li><mark class="cyan">Dynamic Input Support:</mark> User-configurable wall definitions, constraints, and robot properties.</li>
+            <li><mark class="cyan">Interactive 3D Visualization:</mark> Inspect and modify wall configurations dynamically.</li>
+            <li><mark class="cyan">Multiple Rooms Support:</mark> Seamlessly handle complex environments with multiple connected rooms.</li>
+          </ul>
+
+          <p class="headings"><b>Setup:</b></p>
+          <p><b>Requirements:</b></p>
+          <ul class="my-list">
+            <li>Python 3.8+</li>
+            <li>Required Libraries: <code>numpy</code>, <code>matplotlib</code>, <code>pyqt5</code></li>
+          </ul>
+          <p>Install dependencies:</p>
+          <pre><code>pip install -r requirements.txt</code></pre>
+
+          <p class="headings"><b>Usage:</b></p>
+          <p><b>1. Define Input:</b></p>
+          <p>Create a JSON input file (e.g., <code>input.json</code>) with the following structure:</p>
+          <pre><code>{
+  "surfaces": [
+    {"id": 1, "height": 3.0, "width": 4.0, "position": [0, 0, 0], "orientation": "vertical-x"},
+    {"id": 2, "height": 3.0, "width": 4.0, "position": [4, 0, 0], "orientation": "vertical-y"}
+  ],
+  "colors": ["White", "Yellow", "Blue"],
+  "time_per_meter": 2.0,
+  "max_time": 300.0,
+  "paint_availability": {"White": 15, "Yellow": 10, "Blue": 10},
+  "adjacency_constraint": true,
+  "min_colors": 2,
+  "start_position": [0, 0, 0]
+}</code></pre>
+
+          <p><b>2. Run the Solver:</b></p>
+          <pre><code>python main.py</code></pre>
+
+          <p><b>3. Output:</b></p>
+          <p>The solver provides:</p>
+          <ul class="my-list">
+            <li>Assigned colors for walls.</li>
+            <li>Total painting and travel time.</li>
+            <li>Paint usage.</li>
+            <li>3D visualization of the environment.</li>
+          </ul>
+
+          <p class="headings"><b>Example Output:</b></p>
+          <pre><code>=== Valid Solutions ===
+
+Solution 1:
+  - Total Time: 60.00 minutes
+  - Colors Used: White, Yellow
+  - Paint Usage: {'White': 12.0, 'Yellow': 12.0, 'Blue': 0.0}
+  - Optimal Path: [(0, 0, 0), (4, 0, 0)]
+----------------------------------------</code></pre>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
