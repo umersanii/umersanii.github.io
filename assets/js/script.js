@@ -18,7 +18,33 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 
 
+// JavaScript to toggle the dropdown and set the selected category
+document.addEventListener("DOMContentLoaded", function() {
+  const selectButton = document.querySelector('[data-select]');
+  const selectList = document.querySelector('.select-list');
+  const selectValue = document.querySelector('[data-selecct-value]');
+  
+  // Toggle the dropdown visibility when the button is clicked
+  selectButton.addEventListener('click', function() {
+    selectList.classList.toggle('open');
+  });
 
+  // Set the selected category when an item is clicked
+  const selectItems = document.querySelectorAll('[data-select-item]');
+  selectItems.forEach(item => {
+    item.addEventListener('click', function() {
+      selectValue.textContent = this.textContent; // Update the selected value
+      selectList.classList.remove('open'); // Close the dropdown
+    });
+  });
+  
+  // Close dropdown if clicked outside
+  document.addEventListener('click', function(e) {
+    if (!selectButton.contains(e.target) && !selectList.contains(e.target)) {
+      selectList.classList.remove('open');
+    }
+  });
+});
 
 // custom select variables
 const select = document.querySelector("[data-select]");

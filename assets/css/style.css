@@ -818,7 +818,12 @@ font-size: 12px;
 .clients-item img:hover { filter: grayscale(0); }
 
 
-
+#titlespecial
+{
+  color: var(--orange-yellow-crayola);
+  font-size: 30px;
+  margin-bottom: 4%;
+}
 
 
 /*-----------------------------------*\
@@ -1263,8 +1268,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
-  .info-content .title{color: var(--orange-yellow-crayola);}
-  .info-content .title { padding: 5px 18px; }
+  .info-content .title{color: var(--orange-yellow-crayola); position: relative;}
+
+
 
   .info_more-btn {
     top: -30px;
@@ -1636,7 +1642,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: none;
   transition: 0.15s ease-in-out;
 }
-
+.select-list.open {
+  display: block;
+}
 .filter-select.active + .select-list {
   opacity: 1;
   visibility: visible;

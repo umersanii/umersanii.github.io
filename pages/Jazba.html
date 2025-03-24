@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umer Sani - Jazba</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/images/jazba.ico" type="image/x-icon">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <div id="sidebar-placeholder"></div>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link onclick="history.back()">
+              <ion-icon name="arrow-back" size="large"></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <p class="customhead">Jazba</p>
+        </header>
+
+        <li class="social-item">
+          <a href="https://github.com/umersanii/jazba" target="_blank" class="social-link">
+            <p class="social-link1">View On Github</p>
+          </a>
+        </li>
+        <br>
+        <section class="about-text">
+          <mark class="cyan">Jazba</mark> is a fitness tracking application designed to help users log workouts, set fitness goals, monitor progress, and receive personalized notifications. It features distinct admin and user roles, with functionalities such as exercise selection, workout logging, and achievement tracking.
+
+          <p class="headings"><b>Features:</b></p>
+          <ul class="my-list">
+            <li><mark class="cyan">Admin Panel:</mark> Broadcast messages, notify users, manage reports, system logs, and user management.</li>
+            <li><mark class="cyan">User Interface:</mark> Create and log workouts, select exercises, view stats, provide feedback, and manage profile settings.</li>
+            <li><mark class="cyan">Workouts & Stats:</mark> Track exercise performance, view progress, and earn achievements.</li>
+          </ul>
+
+          <p class="headings"><b>Setup:</b></p>
+          <p><b>Requirements:</b></p>
+          <ul class="my-list">
+            <li>Java 8 or higher</li>
+            <li>JavaFX</li>
+            <li>Database setup (e.g., MySQL or SQLite)</li>
+          </ul>
+          <br>
+
+          <p><b>Installation:</b></p>
+          <ol>
+            <li>Clone the repository:
+              <pre><code>git clone https://github.com/umersanii/jazba.git</code></pre>
+            </li>
+            <li>Build the project using your preferred IDE (e.g., IntelliJ IDEA or Eclipse) or command line.</li>
+            <li>Run the <code>Jazba.java</code> file to start the application.</li>
+          </ol>
+          <br>
+
+          <p class="headings"><b>Screenshots:</b></p>
+          <table>
+            <thead>
+              <tr>
+                <th><b>Stats GUI Screen</b></th>
+                <th><b>User Dashboard GUI Screen</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="../assets/images/jazba_stats_gui.png" alt="Stats GUI Screen" width="400">
+                </td>
+                <td>
+                  <img src="../assets/images/jazba_user_dashboard.jpg" alt="User Dashboard GUI Screen" width="400">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
